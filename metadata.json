@@ -1,0 +1,5 @@
+{
+  "name": "ParaTakip AI",
+  "description": "A smart personal finance tracker tailored for Turkish users. Track expenses manually or use Gemini AI to parse bank SMS and natural language inputs automatically.",
+  "requestFramePermissions": []
+}

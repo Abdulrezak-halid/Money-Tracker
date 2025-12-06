@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#eae0d5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0908" media="(prefers-color-scheme: dark)" />
+    <title>ParaTakip - Akıllı Harcama Yönetimi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'rich-black': '#0a0908',
+              'gunmetal': '#22333b',
+              'platinum': '#eae0d5',
+              'khaki': '#c6ac8f',
+              'walnut': '#5e503f',
+            },
+            fontFamily: {
+              sans: ['Rubik', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Rubik', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Smooth transition for theme switching */
+      .transition-colors {
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+      }
+      
+      /* Hide scrollbar for cleaner mobile UI */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react-icons/fa6": "https://esm.sh/react-icons@5.0.1/fa6?external=react",
+    "react-icons/bi": "https://esm.sh/react-icons@5.0.1/bi?external=react",
+    "react-icons/md": "https://esm.sh/react-icons@5.0.1/md?external=react",
+    "react-icons/hi2": "https://esm.sh/react-icons@5.0.1/hi2?external=react",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-platinum dark:bg-rich-black transition-colors duration-300 antialiased selection:bg-walnut selection:text-platinum">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
