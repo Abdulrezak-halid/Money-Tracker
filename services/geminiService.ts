@@ -2,7 +2,7 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { Category, ParsedExpenseData } from "../types";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY || process.env.API_KEY || '' });
 
 const MODEL_NAME = "gemini-2.0-flash";
 const RESPONSE_MIME_TYPE = "application/json";
